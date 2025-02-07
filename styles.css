@@ -1,0 +1,221 @@
+:root {
+    font-family: "Times New Roman", Times, serif;
+    --blue: #1e90ff;
+    --font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+    display: flex;
+    flex-direction: column; /* Stack content and footer */
+    min-height: 100vh; /* Ensure the page takes full height */
+}
+
+header {
+    line-height: 0.25;
+    font-size: 18px;
+    background-color: var(--blue);
+    border: 5px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: darkblue;
+    text-decoration: underline;
+}
+
+header nav a:active {
+    background-color: crimson;
+    text-shadow: crimson;
+}
+
+header h1 {
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1, h2 {
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 24px;
+    color: teal;
+}
+
+h2 {
+    font-size: 20px;
+    color:chocolate;
+}
+
+img {
+    border: 5px solid #ccc;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+ul, ol {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: var(--font-size);
+}
+
+footer label {
+    font-size: var(--font-size);
+}
+
+footer input {
+    font-size: var(--font-size);
+    padding: 5px;
+    margin: 5px;
+}
+
+section {
+    margin-top: 80px;
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    position: sticky;
+    top: 10px;
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    height: calc(100vh - 80px); /* Ensure the sidebar doesn't stretch outside the viewable area */
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 16px;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+    font-size: 18px;
+    background-color: yellow;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+    font-size: 18px;
+    background-color: yellow;
+}
+
+section ul li a:active {
+    background-color: crimson;
+    text-shadow: crimson;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    font-size: 18px;
+    background-color: yellow;
+}
+
+footer p a:active {
+    background-color: crimson;
+    text-shadow: crimson;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1; /* Allow content to grow */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar {
+    width: 250px;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    background-color: #e7e7e7;
+    padding: 20px;
+    z-index: 5;
+}
+
+.sidebar h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 3px 0;
+    color: #0067a5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+
+
+
