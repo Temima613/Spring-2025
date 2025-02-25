@@ -226,3 +226,17 @@ footer p a:active {
     }
 
 }
+
+  
+  /* The element to apply the animation to */
+  header {
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 1200px;}
+  
+    }
